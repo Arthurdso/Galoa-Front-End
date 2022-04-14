@@ -90,7 +90,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 1.5rem;
     background-color: #FDF1EB;
     padding-right: 1.5rem;
 }
@@ -177,4 +177,102 @@
     height: 30.63px;
     border:1px solid #F5F5F5;
     margin-left: 2%;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 256px;
+}
+
+.video-section {
+    width: 55%;
+    position: relative;
+}
+
+.section-video-titulo {
+    font-family: var(--roboto);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+    color: #ED7839;
+    letter-spacing: 0.05em;
+    padding-bottom: 20px;
+}
+
+.video-texto {
+    font-family: var(--roboto);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    position: absolute;
+    padding: 20px;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    z-index: 0;
+}
+
+.video-pessoa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    position: absolute;
+    top: 72%;
+    left: 28%;
+}
+
+.video-imagem {
+    margin-right: 15px;
+}
+
+.video-nome {
+    font-family: var(--roboto);
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+}
+
+.video-subtitulo {
+    font-family: var(--roboto);
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+}
+
+.main-section {
+    display: flex;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.botao {
+    background-color: #ED7839;
+    height: 31px;
+    width: 43px;
+    border: 1px solid #ED7839;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.download {
+    width: 120px;
+    color: #FFFFFF;
+}
+
+.download span {
+    margin-left: 5px;
 }
