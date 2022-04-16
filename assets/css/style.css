@@ -75,7 +75,7 @@
     -webkit-border-image: -webkit-linear-gradient(#FFB455 0%, #ED7839 100%) 1 100%;
     -moz-border-image: -moz-linear-gradient(#FFB455 0%, #ED7839 100%) 1 100%;
     -o-border-image: -o-linear-gradient(#FFB455 0%, #ED7839 100%) 1 100%;
-    border-image:linear-gradient(to bottom, #FFB455 0%, #ED7839 100%) 1 100%;
+    border-image: linear-gradient(to bottom, #FFB455 0%, #ED7839 100%) 1 100%;
     background-color: #FDF1EB;
 }
 
@@ -84,9 +84,9 @@
 }
 
 .section {
-    padding-left:256px;
-    width: 100%;
-    height: 68px;
+    padding-right: 256px;
+    min-width: 1146px;
+    max-height: 68px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,6 +94,7 @@
     background-color: #FDF1EB;
     padding-right: 1.5rem;
 }
+
 
 .cabecalho-p {
     font-family: var(--roboto);
@@ -122,9 +123,9 @@
 .idioma-botao {
     width: 97px;
     height: 34px;
-    border-radius:3px;
+    border-radius: 3px;
     border: 1px solid #cccccc;
-    background-color: transparent;  
+    background-color: transparent;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -175,7 +176,7 @@
 .usuario-imagem {
     width: 30.3px;
     height: 30.63px;
-    border:1px solid #F5F5F5;
+    border: 1px solid #F5F5F5;
     margin-left: 2%;
 }
 
@@ -185,8 +186,13 @@ section {
     padding-left: 256px;
 }
 
+
+.main-section {
+    display: flex;
+}
+
 .video-section {
-    width: 55%;
+    max-width: 784px;
     position: relative;
 }
 
@@ -198,9 +204,11 @@ section {
     color: #ED7839;
     letter-spacing: 0.05em;
     padding-bottom: 20px;
+    width: 145%;
 }
 
 .video-texto {
+    width: 750px;
     font-family: var(--roboto);
     font-size: 24px;
     font-weight: 900;
@@ -208,13 +216,24 @@ section {
     color: #FFFFFF;
     letter-spacing: 0.05em;
     position: absolute;
-    padding: 20px;
+    margin: 25px;
     z-index: 1;
+}
+
+.video-foto {
+    max-height: 439px;
+    max-width: 784px;
+    margin-top: 3px;
+
 }
 
 .video-overlay {
     position: absolute;
     z-index: 0;
+    max-height: 439px;
+    max-width: 784px;
+    margin-top: 3px;
+
 }
 
 .video-pessoa {
@@ -224,8 +243,8 @@ section {
     position: absolute;
     z-index: 1;
     position: absolute;
-    top: 72%;
-    left: 28%;
+    bottom:80px;
+    right: -25px;
 }
 
 .video-imagem {
@@ -250,13 +269,8 @@ section {
     letter-spacing: 0.05em;
 }
 
-.main-section {
-    display: flex;
-}
-
-.botoes {
-    display: flex;
-    justify-content: center;
+.test2{
+    margin-left: 5%;;
 }
 
 .botao {
@@ -275,4 +289,133 @@ section {
 
 .download span {
     margin-left: 5px;
+}
+
+.detalhes-detalhes {
+    align-items: center;
+    text-align: left;
+    max-width: 242px;
+    min-height: 439px;
+    border: 1px solid #ECECEC;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.detalhes-detalhes::-webkit-scrollbar {
+    width: 3px;
+    
+}
+
+.detalhes-detalhes::-webkit-scrollbar-track {
+    background: #BFBFBF;
+
+}
+
+.detalhes-detalhes::-webkit-scrollbar-thumb {
+    background-color:#E7E7E7;
+    border-radius: 5px;
+}
+
+.detalhes-subtitulo {
+    font-family: var(--roboto);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ED7839;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+.detalhes-titulo {
+    font-family: var(--roboto);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25px;
+    background-color: #FDF1EB;
+    border: 1px solid #ECECEC;
+    width: 242px;
+    height: 45px;
+    color: #4E4E4E;
+    padding-left: 10px;
+    padding-top: 8px;
+}
+
+.detalhes-texto {
+    font-family: var(--quicksand);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 10px;
+}
+
+.detalhes-lista-autores-subtitulo {
+    padding-top: 10px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    padding-left: 5%;
+    padding-bottom: 7px;
+}
+
+.detalhes-lista-autores-li {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    padding-left: 5%;
+    padding-top: 5px;
+    margin-bottom: -5px;
+}
+
+.detalhes-lista-universidades {
+    padding-top: 30px;
+    font-family: var(--quicksand);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    color: #ADA0A0;
+    padding-left: 5%;
+    
+}
+.detalhes-lista-universidades-li{
+    padding-bottom: 10px;
+}
+
+li {
+    list-style: none;
+    padding-bottom: 3px;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 242px;
+    margin-left: 55%;
+}
+
+.main-section {
+    width: 1242px;
+}
+
+
+@media only screen and (max-width: 1412px) {
+    .section {
+        min-width: calc(100% + 256px);
+    }
 }
