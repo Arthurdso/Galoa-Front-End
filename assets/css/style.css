@@ -413,6 +413,62 @@ li {
     width: 1242px;
 }
 
+/* RESUMO */
+
+.resumo {
+    width: 1028px;
+}
+
+.resumo-titulo{
+width: 1162px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+color: #4E4E4E;
+background-color:#FDF1EB;
+border: 1px solid #ECECEC;
+height: 45px;
+padding-left:2%;
+}
+
+.resumo-texto {
+width: 1162px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 23px;
+letter-spacing: 0.02em;
+color: #5C5C5C;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 0px 0px;
+border: 1px solid #ECECEC;
+max-height: 1382px;
+padding: 2%;
+}
+
+.btnLerMais {
+    background:none;
+    border:none;
+    color:#ED7839;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+}
+#mais{
+    display: none;
+}
+
 
 @media only screen and (max-width: 1412px) {
     .section {
